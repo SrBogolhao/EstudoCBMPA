@@ -4,12 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style/style.css">
-    <Script src="js/script.js"></Script>
+    <script src="script.js"></script>
     <title>estudos para concurso</title>
 </head>
 <body>
+    <style>
+        ol>li {
+             list-style-type: none; }
+        body{
+            background-color: rgb(65, 65, 65);
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    // Get all buttons and iframes
+    var buttons = document.querySelectorAll('button');
+    var iframes = document.querySelectorAll('iframe');
+
+    // Add click event listeners to all buttons
+    buttons.forEach(function (button, index) {
+        button.addEventListener('click', function () {
+            // Hide all iframes
+            iframes.forEach(function (iframe) {
+                iframe.style.display = 'none';
+            });
+
+            // Show the corresponding iframe
+            iframes[index].style.display = 'block';
+        });
+    });
+});
+
+    </script>
     <nav>
-        <ol>
+        <ol class="menu">
             <li>Lingua Portuguesa(pc),(prf),(pf)</li>
             <li>Raciocinio logico e Matematico(pc),(prf),(pf)</li>
             <li>Informatica(pc),(prf),(pf)</li>
@@ -26,8 +54,9 @@
             <li>Prossecual Penal(pc),(prf),(pf)</li>
             <li>Legislação Especial(pc),(prf),(pf)</li>
             <li>Direitos Humanos(prf)</li>
-            <li>Arquivologia(pc)</li>
-            <li>Estatistica(pc),(pf)</li>
+            <li><a href="#Arquivologia1">Arquivologia(pc)</a></li>
+            <li><a href="#Estatistica1">Estatistica(pc),(pf)</a>
+            </li>
         </ol>
     </nav>
     <h1>Concursos Militares</h1>
@@ -113,202 +142,258 @@
                 <li></li>
             </ol>
         </div>
-        <div>Arquivologia(pc)
+        <div id="Arquivologia1">Arquivologia(pc)
             <ol>
                 <li>
                     <p>1 Arquivistica: Principios e Conceitos</p>
-                    <Button>
+                    <Button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HioOj40BRmU?si=zkbGLmmMoZ2MPI0G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/HioOj40BRmU?si=zkbGLmmMoZ2MPI0G" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </Button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 2
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X9egem7TIIA?si=mPlsLFMbqrhVhZCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/X9egem7TIIA?si=mPlsLFMbqrhVhZCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 3
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MzydLsfcc9g?si=h-jEq72RGZUWyG08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/MzydLsfcc9g?si=h-jEq72RGZUWyG08" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 4
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BY_VEiSFIJw?si=8868ji10TnE0B576" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/BY_VEiSFIJw?si=8868ji10TnE0B576" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                 </li>
                 <li>
                     <p>2 Gestâo de informação e de documentos</p>
-                    <Button>
+                    <Button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/8Z6-6yqMn_Q?si=5OkYGnvkNop4hVmu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/8Z6-6yqMn_Q?si=5OkYGnvkNop4hVmu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </Button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 2
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OVRGqSHKWK8?si=OUYbK2QWTEQ7puZ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/OVRGqSHKWK8?si=OUYbK2QWTEQ7puZ5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 3
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Yew8m2rGofc?si=C0UR9NXp5fhuxsZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/Yew8m2rGofc?si=C0UR9NXp5fhuxsZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 4
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/xHJotH01Jqw?si=KApusKDbxjs8VTJ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/xHJotH01Jqw?si=KApusKDbxjs8VTJ1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 5
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/31s8Kp-wgy4?si=QX_shpfzYaUeMTml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/31s8Kp-wgy4?si=QX_shpfzYaUeMTml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 6
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_v0bIfCAHwM?si=WdlDDz9HQSmrueNy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/_v0bIfCAHwM?si=WdlDDz9HQSmrueNy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 7
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/uf3igR48dQU?si=YRT35sA-9mhogETa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/uf3igR48dQU?si=YRT35sA-9mhogETa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 8
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/TzqZh4BkYWo?si=zT4eGzirA2P1h4Id" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/TzqZh4BkYWo?si=zT4eGzirA2P1h4Id" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <ul>
                         <li>Protocolo: recebimento, registro, distribuição, tramitação e expedição de documentos</li>
-                        <button>
+                        <button style="background-color: red;">
                             aula 1
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/3qjAxe5RlIU?si=MHeBJO5jnZSME3oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/3qjAxe5RlIU?si=MHeBJO5jnZSME3oE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
-                        <button>
+                        <button style="background-color: red;">
                             aula 2
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kk_XA0ZuVUM?si=3cqwmxEvD8chcmaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/kk_XA0ZuVUM?si=3cqwmxEvD8chcmaA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
                         <li>Classificação de documentos de arquivos</li>
-                        <button>
+                        <button style="background-color: red;">
                             aula 1
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/O_fjg-IIANM?si=xEE30SnUkcOL2GV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/O_fjg-IIANM?si=xEE30SnUkcOL2GV-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
-                        <button>
+                        <button style="background-color: red;">
                             aula 2
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UoEnDgeFyz8?si=0mHYsYH3LYZU4cY3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/UoEnDgeFyz8?si=0mHYsYH3LYZU4cY3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
                         <li>Arquivamento e ordenação de documentos de arquivo</li>
-                        <button>
+                        <button style="background-color: red;">
                             aula 1
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/C_DpAiyrtIY?si=Ug8-5xFKbNa85GH7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/C_DpAiyrtIY?si=Ug8-5xFKbNa85GH7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
-                        <button>
+                        <button style="background-color: red;">
                             aula 2
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/GFW8qIVa274?si=L4CbFAbLHdezf2hv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/GFW8qIVa274?si=L4CbFAbLHdezf2hv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
                         <li>Ciclo vital dos documentos ou teoria das 3 idades</li>
-                        <button>
+                        <button style="background-color: red;">
                             aula 1
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/kn7-cMgDKVc?si=TfLAAmfNK119yG3P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/kn7-cMgDKVc?si=TfLAAmfNK119yG3P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
                         <li>Tabela de temporalidade de documentos de arquivo</li>
-                        <button>
+                        <button style="background-color: red;">
                             aula 1
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/bRD-PyzpYOQ?si=5rtqJ0L-W844foxx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/bRD-PyzpYOQ?si=5rtqJ0L-W844foxx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
-                        <button>
+                        <button style="background-color: red;">
                             aula 2
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/OTZdmyOoaRU?si=HWEFk44cJ6hOYtX7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/OTZdmyOoaRU?si=HWEFk44cJ6hOYtX7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </button>
                     </ul>
                 </li>
                 <li>
                     <p>3 Acondicionamento e armazenamento de documentos de arquivo</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9TdoltXsYg4?si=aAyyRphgVNRVTXeu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/9TdoltXsYg4?si=aAyyRphgVNRVTXeu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                 </li>
                 <li>
                     <p>4 Preservação e conservação de documentos de arquivo</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Kb-G2kLEyo8?si=v78cJX4nmWN3RnI-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/Kb-G2kLEyo8?si=v78cJX4nmWN3RnI-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 2
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/D5aBEQp0SuE?si=cckTW3unwbRPius7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/D5aBEQp0SuE?si=cckTW3unwbRPius7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                 </li>
                 <li>
                     <p>5 Tipologia documentais e suporte fisico:</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Klubd4ljFIA?si=kkUy1VqVbEDV2lOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/Klubd4ljFIA?si=kkUy1VqVbEDV2lOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
-                    <button>
+                    <button style="background-color: red;">
                         aula 2
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/U3Pu0a0ExmM?si=Jw0jFC1HO49JMHtG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/U3Pu0a0ExmM?si=Jw0jFC1HO49JMHtG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <p>microfilmagem</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/nL0UqoWLX-g?si=oYi3U5TGw-G_RpJp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/nL0UqoWLX-g?si=oYi3U5TGw-G_RpJp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <p>automação</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KtCcNXMiarM?si=EN7ojpdgDoccI0L5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/KtCcNXMiarM?si=EN7ojpdgDoccI0L5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <p>preservção</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HFFYiC6KG4k?si=EDUWcJ8Z0QCQMe0d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/HFFYiC6KG4k?si=EDUWcJ8Z0QCQMe0d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <p>concervaçoes</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/YjHYgXKio7o?si=ZUjwOZ0-ue-wF6aG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/YjHYgXKio7o?si=ZUjwOZ0-ue-wF6aG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <p>restalração de documentos</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/w0JQQxXIAyo?si=SBSEqwAQpV54sqiC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/w0JQQxXIAyo?si=SBSEqwAQpV54sqiC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                 </li>
                 <li>
                     <p>6 Agentes de Deterioração de Acervos</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/2I4OdWNUoXs?si=GdRBlAtyYMrlLokh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/2I4OdWNUoXs?si=GdRBlAtyYMrlLokh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                 </li>
                 <li>
                     <p>Arquivo Permanente</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/V0W_O8ZIxvQ?si=dnh-BiXqIaczVRFq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/V0W_O8ZIxvQ?si=dnh-BiXqIaczVRFq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                 </li>
                 <li>
                     <p>Decreto nº 7.72412</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/f4Zf3WeDBvU?si=LfVb43NyyQ4osknh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/f4Zf3WeDBvU?si=LfVb43NyyQ4osknh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <p>Lei nº 12.5272011</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/clWTDdewsEo?si=APrXIbNjmMaf2n1r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/clWTDdewsEo?si=APrXIbNjmMaf2n1r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <p>Decreto nº 4.0732002</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/weqXyEz1hbE?si=9tKUJ7jvIC0iS8kL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/weqXyEz1hbE?si=9tKUJ7jvIC0iS8kL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                     <p>Lei nº 8.15991</p>
-                    <button>
+                    <button style="background-color: red;">
                         aula 1
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/OEvle_Ms7Fg?si=GXZ60thl0rQm8WY5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/OEvle_Ms7Fg?si=GXZ60thl0rQm8WY5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </button>
                 </li>
             </ol>
         </div>
-        <div>Estatistica(pc),(pf)
+        <div id="Estatistica1">Estatistica(pc),(pf)
             <ol>
-                <li></li>
+                <li>Estatistica descritiva e analise explorativa de dados:
+                    <p>Estatistica descritiva</p>
+                    <button style="background-color: red;">
+                        aula 1
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/i0MS-aJmX-o?si=hEUEPHhsZSMH3WV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </button>
+                    <button style="background-color: red;">
+                        aula 2
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/049FMAjMKIw?si=Ha8kzXuwT5Ga8Nwp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </button>
+                </li>
+                <li>
+                    <p>Analise exploratoria de dados</p>
+                    <button style="background-color: red;">
+                        aula 1
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/c2xVVxrrKSE?si=9q0jvG-sn_uJSzqd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </button>
+                </li>
+                <li>
+                    <p>graficos</p>
+                    <button style="background-color: red;">
+                        aula 1
+                        <iframe style="display: none;" width="560" height="315" src="https://www.youtube.com/embed/qsKkKTVwA6E?si=sz6UTRVKM0meg7YN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </button>
+                </li>
+                <li>
+                    <p>diagramas</p>
+                </li>
+                <li>
+                    <p>tabela</p>
+                </li>
+                <li>
+                    <p>media descritiva</p>
+                    <ul>
+                        <li>
+                            <p>posição</p>
+                        </li>
+                        <li>
+                            <p>dispesão</p>
+                        </li>
+                        <li>
+                            <p>assimetria</p>
+                        </li>
+                        <li>
+                            <p>curtose</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>probabilidade definiçoes basicas e axinomas</p>
+                </li>
+                <li>
+                    <p>probabilidade condicional e indepedencia</p>
+                </li>
             </ol>
         </div>
     </header>
+    <footer>
+        <p>vermelho pc</p>
+    </footer>
 </body>
 </html>
